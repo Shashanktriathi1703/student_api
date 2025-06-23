@@ -1,0 +1,12 @@
+# production ka configuration krne ke saare cheez hoti hai 
+env:"dev"
+
+
+# sqlLite database ka use kr rahe 
+storage_path: "storage/storage.db"
+
+
+# sever ke baare mai configuration rakhna hai uske liye bhi kuch krte hai
+http_server: 
+  address: "localhost:8082"
+  # timeout: :"---"
