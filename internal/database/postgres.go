@@ -4,7 +4,7 @@ import (
 	"database/sql"
 	"fmt"
 	"log"
-
+	_"github.com/lib/pq"
 	"github.com/Shashanktriathi1703/student-api/internal/config"
 )
 
@@ -15,12 +15,12 @@ func NewPostgresConnection(cfg *config.Config) *sql.DB {
 	// Open database connection
 	db, err := sql.Open("postgres", connStr)
 	if err != nil {
-		log.Fatal("Error Opening database %v", err)
+		log.Fatalf("Error Opening database %v", err)
 	}
 
 	// Test the connection
 	if err := db.Ping(); err != nil {
-		log.Fatal("Error connecting to the database %v", err)
+		log.Fatalf("Error connecting to the database %v", err)
 	}
 
 	//Create users table if not exists
@@ -34,8 +34,8 @@ func NewPostgresConnection(cfg *config.Config) *sql.DB {
 
 	// Excueting the query wiothout returning the rows.
 	_, err = db.Exec(createTableQuery)
-	if err != nil{
-		log.Fatal("Error creating users table : %v", err)
+	if err != nil {
+		log.Fatalf("Error creating users table : %v", err)
 	}
 
 	return db
