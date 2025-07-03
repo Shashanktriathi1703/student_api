@@ -34,3 +34,6 @@ go.work.sum
 
 storage
 /config 
+package-lock.json
+node_modules
+.gitignore
