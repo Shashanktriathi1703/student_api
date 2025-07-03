@@ -3,11 +3,13 @@ module github.com/Shashanktriathi1703/student-api
 go 1.24.4
 
 require (
-	github.com/BurntSushi/toml v1.5.0 // indirect
-	github.com/gorilla/mux v1.8.1 // indirect
-	github.com/ilyakaznacheev/cleanenv v1.5.0 // indirect
-	github.com/joho/godotenv v1.5.1 // indirect
-	github.com/lib/pq v1.10.9 // indirect
-	gopkg.in/yaml.v3 v3.0.1 // indirect
-	olympos.io/encoding/edn v0.0.0-20201019073823-d3554ca0b0a3 // indirect
+	github.com/gorilla/mux v1.8.1
+	github.com/joho/godotenv v1.5.1
+	github.com/lib/pq v1.10.9
+)
+
+require (
+	github.com/felixge/httpsnoop v1.0.3 // indirect
+	github.com/gorilla/handlers v1.5.2 // indirect
+	github.com/rs/cors v1.11.1 // indirect
 )

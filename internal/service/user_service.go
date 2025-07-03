@@ -25,6 +25,6 @@ func (s *UserService) GetAllUsers()([]model.User, error){
 	return s.repo.GetAll()
 }
 
-func (s *UserService) DeleteUserid(id int)error{
+func (s *UserService) DeleteUser(id int) error{
 	return s.repo.Delete(id)
 }
