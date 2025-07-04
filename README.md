@@ -1,5 +1,8 @@
 # Student API Project
 
+![go_react_app](https://github.com/user-attachments/assets/fcf500ad-cc35-480e-9670-663a2057b93b)
+
+
 ## Project Description
 This project is a full-stack student management application featuring a Go backend API and a React frontend. The backend provides RESTful endpoints to manage user data stored in a PostgreSQL database, while the frontend offers a user-friendly interface to interact with the API.
 
